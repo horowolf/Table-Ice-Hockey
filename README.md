@@ -6,6 +6,9 @@ Server host in client is fixed, should modify the code before using server.
 
 
 # Tech
+
 Multi-threaded programming
+
 TCP/IP, socket
+
 JavaFX
