@@ -292,7 +292,7 @@ public class Client extends Application {
 					while (true) {
 						try {
 							send.writeUTF(message);
-							thread.sleep(100);
+							thread.sleep(50);
 							break;
 						} catch (IOException e) { //do again
 						}
@@ -397,7 +397,7 @@ public class Client extends Application {
 			double dr = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
 			double cos = ((dy / dr) * (dy / dr)) - ((dx / dr) * (dx / dr));
 			double sin = ((dy / dr) * (dx / dr)) *2;
-			double speed = (diameter - ballP.distance(selfP)) * 2 + radius * 0.2;
+			double speed = (diameter - ballP.distance(selfP)) * 1 + radius * 0.2;
 			
 			double dirXBuf = cos * (ballDirectionX + selfP.getX() - ballP.getX()) + sin * (ballDirectionY + selfP.getY() - ballP.getY());
 			double dirYBuf = sin * (ballDirectionX + selfP.getX() - ballP.getX()) - cos * (ballDirectionY + selfP.getY() - ballP.getY());
